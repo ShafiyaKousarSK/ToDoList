@@ -8,7 +8,6 @@
       min-height: 100vh;
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      /* Vibrant layered gradients for a dynamic background */
       background:
         radial-gradient(circle at 17% 88%, #303fa3 0px, transparent 400px),
         radial-gradient(circle at 95% 7%, #5cdb95 0px, transparent 350px),
@@ -28,7 +27,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* Add glass effect */
       backdrop-filter: blur(4px);
       border: 1.5px solid #0b2545;
     }
@@ -142,7 +140,6 @@
       font-style: italic;
       letter-spacing: 1px;
     }
-    /* Responsive for smaller screens */
     @media(max-width: 500px) {
       #todo-card { width: 98vw; padding: 12vw 2vw; }
       #top-bar { flex-direction: column; }
@@ -174,12 +171,10 @@
       const span = document.createElement("span");
       span.textContent = taskText;
       span.className = "todo-text";
-      // Click to toggle completed mark
       span.addEventListener("click", function() {
         li.classList.toggle("completed");
       });
 
-      // Edit button
       const editBtn = document.createElement("button");
       editBtn.textContent = "Edit";
       editBtn.className = "edit-btn";
@@ -190,7 +185,6 @@
         }
       });
 
-      // Delete button
       const delBtn = document.createElement("button");
       delBtn.textContent = "Delete";
       delBtn.className = "delete-btn";
@@ -212,3 +206,4 @@
   </script>
 </body>
 </html>
+
